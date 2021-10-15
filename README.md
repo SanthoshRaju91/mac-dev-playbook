@@ -44,3 +44,13 @@ Ansible Playbook for Setting up my Mac according to my preference.
    ```
    ansible-playbook main.yml --ask-become-pass
    ```
+
+### Global packages installation
+
+To automate packages installation globally either from npm / pip / gems. Add the package name to
+
+1. npm_packages -> npm packages
+2. pip_packages -> python packages
+3. gem_packages -> Ruby Gem packages
+
+in the `vars/main.yml` file
