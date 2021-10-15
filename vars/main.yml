@@ -55,3 +55,10 @@ vs_code_extensions:
 
 configure_terminal: true
 iterms_base_path: "~/Library/Application Support/iTerm2"
+
+configure_packages: true
+npm_packages: ["node-gyp", "static-server"]
+
+pip_packages: []
+
+gem_packages: []
