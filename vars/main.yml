@@ -14,6 +14,7 @@ homebrew_installed_packages:
   - nvm
   - ssh-copy-id
   - wget
+  - zsh
   - zsh-history-substring-search
 
 homebrew_taps:
@@ -23,7 +24,6 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 
 homebrew_cask_apps:
-  - brave-browser
   - figma
   - google-chrome
   - iterm2
@@ -34,7 +34,6 @@ homebrew_cask_apps:
   - vagrant
   - virtualbox
   - visual-studio-code
-  - zsh
 
 configure_vscode: true
 vs_code_base_path: "~/Library/Application Support/Code"
