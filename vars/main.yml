@@ -1,0 +1,56 @@
+---
+downloads: ~/.ansible-downloads/
+
+homebrew_installed_packages:
+  - autoconf
+  - bash-completion
+  - doxygen
+  - gettext
+  - git
+  - github/gh/gh
+  - libevent
+  - nmap
+  - node
+  - nvm
+  - ssh-copy-id
+  - wget
+  - zsh-history-substring-search
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+
+homebrew_cask_apps:
+  - brave-browser
+  - figma
+  - google-chrome
+  - iterm2
+  - mysqlworkbench
+  - obsidian
+  - postman
+  - telegram
+  - vagrant
+  - virtualbox
+  - visual-studio-code
+  - zsh
+
+configure_vscode: true
+vs_code_base_path: "~/Library/Application Support/Code"
+vs_code_extensions_path: "~/.vscode/extensions"
+vs_code_extensions:
+  - patbenatar.advanced-new-file
+  - aaron-bond.better-comments
+  - sleistner.vscode-fileutils
+  - ritwickdey.liveserver
+  - aryanahire.sublime-monokai
+  - bradlc.vscode-tailwindcss
+  - ms-azuretools.vscode-docker
+  - dbaeumer.vscode-eslint
+  - esbenp.prettier-vscode
+  - ms-python.python
+  - equinusocio.vsc-material-theme-icons
+
+configure_terminal: true
+iterms_base_path: "~/Library/Application Support/iTerm2"

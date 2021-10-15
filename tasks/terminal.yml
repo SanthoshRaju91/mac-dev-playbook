@@ -1,0 +1,27 @@
+---
+- name: Ensure .zshrc exists
+  stat:
+    path: ~/.zshrc
+  register: stat_zshrc_exists
+
+- name: Ensure .oh-my-zsh exits
+  stat:
+    path: ~/.oh-my-zsh
+  register: stat_on_my_zsh_exists
+
+- name: Cloning personal oh-my-zsh
+  git:
+    repo: https://github.com/SanthoshRaju91/ohmyzsh
+    dest: ~/.oh-my-zsh
+  when: not stat_on_my_zsh_exists
+
+- name: "Ensure ~/.zshrc is updated"
+  template:
+    src: templates/zshrc-profile.j2
+    dest: ~/.zshrc
+  when: not stat_zshrc_exists
+
+- name: "Ensure iterm dynamic profile is updated"
+  copy:
+    src: files/terminal/Profiles.json
+    dest: "{{ iterms_base_path }}/DynamicProfiles/itermprofiles.json"

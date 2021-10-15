@@ -1,0 +1,24 @@
+---
+- name: "Ensure VS Code directories exist"
+  file:
+    path: "{{ item }}"
+    state: directory
+  loop:
+    - "{{ vs_code_base_path }}"
+    - "{{ vs_code_extensions_path }}"
+
+
+- name: "Ensure VS Code commands can be executed"
+  command: "/usr/local/bin/code --version"
+
+
+- name: "Ensure VS code extensions are installed"
+  command: "/usr/local/bin/code --install-extension {{ item }}"
+  with_items: "{{ vs_code_extensions }}"
+
+
+- name: "Ensure User settings.json is updated"
+  copy:
+    src: "files/vs-code/settings.json"
+    dest: "{{ vs_code_base_path }}/User/settings.json"
+
