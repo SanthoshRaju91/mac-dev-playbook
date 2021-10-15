@@ -4,6 +4,8 @@ downloads: ~/.ansible-downloads/
 homebrew_installed_packages:
   - autoconf
   - bash-completion
+  - docker
+  - docker-compose
   - doxygen
   - gettext
   - git
