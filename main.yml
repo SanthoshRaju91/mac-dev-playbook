@@ -8,6 +8,7 @@
     - role: elliotweiser.osx-command-line-tools
     - role: geerlingguy.mac.homebrew
       tags: ["homebrew"]
+      ignore_errors: True
 
   tasks:
     - import_tasks: tasks/vs-code.yml
