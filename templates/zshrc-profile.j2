@@ -8,3 +8,21 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
 
+export PATH=~/bin:$PATH
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Command Aliases
+alias ll='ls -laF'
+alias gs='git status'
+alias gd='git diff'
+alias ga='git add'
+alias gc='git commit -m'
+alias gch='git checkout'
+alias gf="git fetch --all"
+alias gp='git pull'
+alias gph='git push'
+alias gb='git branch'
+alias gri="git rebase -i"
+alias grc="git rebase --continue"
+alias k="kubectl"
