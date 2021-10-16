@@ -6,9 +6,14 @@
 
   roles:
     - role: elliotweiser.osx-command-line-tools
+
     - role: geerlingguy.mac.homebrew
       tags: ["homebrew"]
       ignore_errors: True
+
+    - role: geerlingguy.mac.dock
+      when: configure_dock
+      tags: ["dock"]
 
   tasks:
     - import_tasks: tasks/vs-code.yml

@@ -62,3 +62,54 @@ npm_packages: ["node-gyp", "static-server"]
 pip_packages: []
 
 gem_packages: []
+
+configure_dock: true
+dockitems_remove:
+  - Launchpad
+  - TV
+  - Podcasts
+  - "App Store"
+  - Music
+  - Siri
+  - Messages
+
+dockitems_persist:
+  - name: "System Preferences"
+    path: "/System/Applications/System Preferences.app"
+    pos: 1
+
+  - name: "Calendar"
+    path: "/System/Applications/Calendar.app"
+    pos: 2
+
+  - name: "Books"
+    path: "/System/Applications/Books.app"
+    pos: 3
+
+  - name: "Notes"
+    path: "/System/Applications/Notes.app"
+    pos: 4
+
+  - name: "Figma"
+    path: "/Applications/Figma.app"
+    pos: 5
+
+  - name: "Brave Browser"
+    path: "/Applications/Brave Browser.app"
+    pos: 6
+
+  - name: "Obsidian"
+    path: "/Applications/Obsidian.app"
+    pos: 7
+
+  - name: "Telegram"
+    path: "/Applications/Telegram.app"
+    pos: 8
+
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app"
+    pos: 9
+
+  - name: "iTerm"
+    path: "/Applications/iTerm.app"
+    pos: 10
