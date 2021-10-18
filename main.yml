@@ -7,6 +7,30 @@
   roles:
     - role: elliotweiser.osx-command-line-tools
 
+    - role: fubarhouse.macfonts
+      fonts:
+        - name: SourceCodePro
+          archive: https://github.com/adobe-fonts/source-code-pro.git
+          version: release
+          directory: OTF
+          files:
+            - SourceCodePro-Black.otf
+            - SourceCodePro-BlackIt.otf
+            - SourceCodePro-Bold.otf
+            - SourceCodePro-BoldIt.otf
+            - SourceCodePro-ExtraLight.otf
+            - SourceCodePro-ExtraLightIt.otf
+            - SourceCodePro-It.otf
+            - SourceCodePro-Light.otf
+            - SourceCodePro-LightIt.otf
+            - SourceCodePro-Medium.otf
+            - SourceCodePro-MediumIt.otf
+            - SourceCodePro-Regular.otf
+            - SourceCodePro-Semibold.otf
+            - SourceCodePro-SemiboldIt.otf
+      when: configure_system_fonts
+      tags: ["fonts"]
+
     - role: geerlingguy.mac.homebrew
       tags: ["homebrew"]
       ignore_errors: True

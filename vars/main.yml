@@ -129,3 +129,5 @@ dockitems_persist:
   - name: "iTerm"
     path: "/Applications/iTerm.app"
     pos: 12
+
+configure_system_fonts: true
